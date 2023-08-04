@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Scanner</title>
+</head>
+<body>
+     <header>
+        <h1>Scanner</h1>
+        <img src="logo-proa-san-francisco-1018x1024.jpg" width="150px" height="125px">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#Retiro">Retiro</a></li>
+            <li><a href="#Devolucion">Devolucion</a></li>
+        </ul>
+    </nav>
+
+    <div id="Retiro">
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Nombre del docente</td>
+                        <td>Curso</td>
+                        <td>Codigo de barras</td>
+                        <td>Estado</td>
+                        <td>Observacion</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" id="docente"></td>
+                        <td>
+                            <select name="curso" id="curso">
+                                <option value="1A">1A</option>
+                                <option value="1B">1B</option>
+                                <option value="2A">2A</option>
+                                <option value="2B">2B</option>
+                                <option value="3A">3A</option>
+                                <option value="3B">3B</option>
+                                <option value="4A">4A</option>
+                                <option value="4B">4B</option>
+                                <option value="5A">5A</option>
+                                <option value="5B">5B</option>
+                                <option value="6A">6A</option>
+                                <option value="6B">6B</option>
+                                <option value="7A">7A</option>
+                                <option value="7B">7B</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="text" id="entradaTexto" autofocus>
+                            </div>
+                        </td>
+                        <td>
+                            <select name="estado" id="estado">
+                                <option value="Reservado">Reservado</option>
+                                <option value="Disponible">Disponible</option>
+                                <option value="Mal funcionamiento">Mal funcionamiento</option>
+                                <option value="Devuelta">Devuelta</option>   
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" id="observacion">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    
+    <button>Enviar</button>
+    
+    <div class="mensaje" id="resultado">
+        <!-- Aquí mostraremos el contenido del vector -->
+    </div>
+    <script src="java.js"></script>
+
+</body>
+</html>
